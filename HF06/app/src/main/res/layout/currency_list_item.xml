@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Zászló kép -->
+
+    <!-- Valuta kód és neve -->
+
+    <!-- Vételi ár -->
+
+    <!-- Eladási ár -->
+
+    <ImageView
+        android:id="@+id/flagImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/eur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/currencyCodeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="EUR"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/flagImageView" />
+
+    <TextView
+        android:id="@+id/currencyNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Euro"
+        app:layout_constraintStart_toStartOf="@+id/currencyCodeTextView"
+        app:layout_constraintTop_toTopOf="@+id/sellRateTextView" />
+
+    <TextView
+        android:id="@+id/buyRateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:text="Cumpără: 4.4100 RON"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toEndOf="@+id/currencyCodeTextView"
+        app:layout_constraintTop_toTopOf="@+id/currencyCodeTextView" />
+
+    <TextView
+        android:id="@+id/sellRateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Vinde: 4.5500 RON"
+        android:textColor="@android:color/holo_red_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buyRateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/buyRateTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
